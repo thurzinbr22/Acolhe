@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta name="theme-color" content="#FFFDFA">
+  <meta name="description" content="Acolhe — Um espaço de apoio, cuidado e acolhimento emocional na escola.">
+
+  <title>Acolhe — Um espaço para cuidar de você</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="#home" aria-label="Acolhe, início">
+      <span aria-hidden="true">❀</span>
+      Acolhe
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="nav-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="nav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav" aria-label="Navegação principal"></nav>
+  </header>
+
+  <main id="app" tabindex="-1" aria-live="polite">
+    <div class="loading">Carregando...</div>
+  </main>
+
+  <footer>
+    <p>
+      Acolhe é um espaço de acolhimento da escola e não substitui
+      atendimento profissional.
+    </p>
+    <p>
+      Em caso de urgência, ligue 188 (CVV) ou 192 (SAMU).
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.0/dist/umd/supabase.min.js"></script>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
